@@ -29,7 +29,7 @@ class Balle() :
         self.hauteur = 492
         self.image = pygame.image.load("balle.png")
         self.etat = "chargee"
-        self.vitesse = 5
+        self.vitesse = 15
     
     def bouger(self):
         if self.etat == "chargee":
@@ -73,4 +73,3 @@ class Ennemi():
         elif (self.type ==2):
             self.image = pygame.image.load("invader2.png")
             self.vitesse = 2
-        
